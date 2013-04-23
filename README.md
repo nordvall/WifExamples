@@ -21,6 +21,7 @@ All client project contains a console application, that calls the WCF service me
 Setup
 -----
 Here are the steps needed to run the examples:
+
 1. Download this repository to your development computer.
 2. Install some required certificates, by running the install.bat in the SetupCertificates folder
 3. Navigate to the folder matching the .NET version you are using. Open the .sln file in Visual Studio 2010 or 2012.
