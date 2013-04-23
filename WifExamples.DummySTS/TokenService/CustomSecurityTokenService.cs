@@ -139,7 +139,7 @@ namespace DummySTS.TokenService
             // TODO: Change the claims below to issue custom claims required by your application.
             // Update the application's configuration file too to reflect new claims requirement.
 
-            outputIdentity.Claims.Add(new Claim(System.IdentityModel.Claims.ClaimTypes.Name, principal.Identity.Name ?? "Unknown"));
+            outputIdentity.Claims.Add(new Claim(System.IdentityModel.Claims.ClaimTypes.Name, principal.Identity.Name ?? "Demo user"));
             outputIdentity.Claims.Add(new Claim(ClaimTypes.Role, "Manager"));
 
             return outputIdentity;

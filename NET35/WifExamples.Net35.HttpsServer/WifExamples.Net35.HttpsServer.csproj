@@ -61,7 +61,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="DemoService.svc" />
-    <Content Include="FederationMetadata\2007-06\FederationMetadata.xml" />
+    <Content Include="Managers.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -76,6 +76,13 @@
     </Compile>
     <Compile Include="DemoService.svc.cs">
       <DependentUpon>DemoService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Managers.aspx.cs">
+      <DependentUpon>Managers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Managers.aspx.designer.cs">
+      <DependentUpon>Managers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

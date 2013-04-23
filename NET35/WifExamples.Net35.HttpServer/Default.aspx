@@ -17,6 +17,7 @@
             <asp:BoundField DataField="Value" HeaderText="Value" ReadOnly="True" /> 
         </Columns> 
         </asp:GridView>
+        <a href="Managers.aspx">Go to Managers' page</a>
         <hr />
         Server time: <%= DateTime.Now %>
     </div>

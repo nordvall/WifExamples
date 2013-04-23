@@ -10,6 +10,9 @@ namespace WifExamples.Common
     public interface IDemoService
     {
         [OperationContract]
-        string Hello();
+        string WhoAmI();
+
+        [OperationContract]
+        string RestrictedMethod();
     }
 }

@@ -14,9 +14,13 @@ namespace WifExamples.Net35.HttpsClient
             var factory = new ChannelFactory<IDemoService>("WS2007FederationHttpBinding_IDemoService");
             IDemoService channel = factory.CreateChannel();
 
-            string result = channel.Hello();
+            string whoAmIresult = channel.WhoAmI();
+            Console.WriteLine(whoAmIresult);
 
-            Console.WriteLine("Service says: " + result);
+            string restrictedMethodResult = channel.RestrictedMethod();
+            Console.WriteLine(restrictedMethodResult);
+
+            Console.ReadLine();
         }
     }
 }
