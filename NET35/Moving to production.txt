@@ -1,0 +1,57 @@
+Moving to production
+====================
+
+Here are instructions how to adapt your configuration for an Microsoft ADFS environment:
+
+Server side configuration
+-------------------------
+Configuration in web.config:
+
+### ADFS redirect information
+These settings are used when your web site redirects unauthenticated users to ADFS
+
+Look for this line: 
+ <wsFederation passiveRedirectEnabled="true" issuer="https://localhost:44500/" realm="urn:claimsdemo:https35" />
+
+Verify the following parameters:
+* issuer: The address to redirect unauthenticated users. Usually something "like https://adfs.domain.com/adfs/ls/"
+* realm: The identifier of your application, as registered in the ADFS configuration.
+
+### ADFS certificate information
+This setting is used to verify users SAML tokens, when they come back to your web site after ADFS authentication.
+
+    <add name="DummySTS" thumbprint="18145fb6b5d96b3cc34ec7599f12172bb93c68ef" />
+
+Modify the following parameters:
+
+- **name**: The identifier of the ADFS server, as registered in the ADFS configuration. Usually something like http://adfs.domain.com/adfs/services/trust
+- **thumbprint**: The thumbprint of the ADFS signing certificate. 
+
+
+Client side configuration
+-------------------------
+All configuration is made in app.config
+
+### Credential type
+
+Look for this line:
+
+    <transport clientCredentialType="None"/> 
+
+Modify the following parameter: 
+
+- **clientCredentialType**: Depends on how you will authenticate to ADFS. Usually "Windows" or "Basic".
+
+### ADFS Endpoint
+
+Look for this line:
+
+    <issuer address="https://localhost:44500/Service.svc" binding="ws2007HttpBinding" bindingConfiguration="adfsBinding">
+
+Verify the following parameters:
+
+- **address**: The ADFS WCF endpoint for requesting tokens. Usually something like: https://adfs.domain.com/adfs/services/trust/13/windowstransport
+  - If you chose "Windows" for "clientCredentialType", the address should end with /windwstransport
+  - If you chose "Basic" for "clientCredentialType", the address should end with /usernamebasictransport
+
+
