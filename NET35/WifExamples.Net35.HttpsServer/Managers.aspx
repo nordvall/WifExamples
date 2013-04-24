@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Managers.aspx.cs" Inherits="ClaimsServices.Managers" %>
+﻿<%@ Page Language="C#" %>
 
 <!DOCTYPE html>
 
