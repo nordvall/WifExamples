@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net35.HttpServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net35.HttpsServer", "WifExamples.Net35.HttpsServer\WifExamples.Net35.HttpsServer.csproj", "{200160BE-5E36-470D-9693-CBC4E2712E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Common", "..\WifExamples.Common\WifExamples.Common.csproj", "{E6859805-666E-4D16-9022-C9F66F240966}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.DummySTS", "..\WifExamples.DummySTS\WifExamples.DummySTS.csproj", "{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{50BD92B6-F3C5-43B3-AAC8-BE4157625745}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2CA67C13-9D2C-447F-B453-D2EEE3731F4D}"
@@ -23,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		readme.txt = readme.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Common", "..\Common\WifExamples.Common\WifExamples.Common.csproj", "{E6859805-666E-4D16-9022-C9F66F240966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.DummySTS", "..\Common\WifExamples.DummySTS\WifExamples.DummySTS.csproj", "{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,7 +63,7 @@ Global
 		{3C5F4796-57A1-4C2E-8ADC-0E7D9D0BC707} = {2CA67C13-9D2C-447F-B453-D2EEE3731F4D}
 		{200160BE-5E36-470D-9693-CBC4E2712E83} = {0AFAF140-EE8B-4611-BF4A-0203BD5757D1}
 		{0EE53C90-A0BA-43AF-8E65-599831E0E16F} = {0AFAF140-EE8B-4611-BF4A-0203BD5757D1}
-		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA} = {50BD92B6-F3C5-43B3-AAC8-BE4157625745}
 		{E6859805-666E-4D16-9022-C9F66F240966} = {50BD92B6-F3C5-43B3-AAC8-BE4157625745}
+		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA} = {50BD92B6-F3C5-43B3-AAC8-BE4157625745}
 	EndGlobalSection
 EndGlobal

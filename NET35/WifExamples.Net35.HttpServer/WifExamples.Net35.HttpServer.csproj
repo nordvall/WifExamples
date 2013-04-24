@@ -77,29 +77,16 @@
     <Compile Include="DemoService.svc.cs">
       <DependentUpon>DemoService.svc</DependentUpon>
     </Compile>
-    <Compile Include="Managers.aspx.cs">
-      <DependentUpon>Managers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Managers.aspx.designer.cs">
-      <DependentUpon>Managers.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WifExamples.Common\WifExamples.Common.csproj">
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\WifExamples.Common\WifExamples.Common.csproj">
       <Project>{e6859805-666e-4d16-9022-c9f66f240966}</Project>
       <Name>WifExamples.Common</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

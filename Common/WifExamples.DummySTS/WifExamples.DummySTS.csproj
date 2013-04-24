@@ -66,7 +66,7 @@
     <Content Include="Default.aspx" />
     <Content Include="FederationMetadata\2007-06\FederationMetadata.xml" />
     <Content Include="Login.aspx" />
-    <Content Include="Service.svc" />
+    <Content Include="TokenService.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
