@@ -27,6 +27,7 @@ System requirements to run the code:
  
 Setup instructions
 ------------------
+* Download all the code, by using the ZIP button above.
 * Run install.bat from the Certificates folder. The script will install the necessary test certificates on your computer.
 * Open the solution in Visual Studio. 
 * Right click on the solution and select "Set startup projects".
