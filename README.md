@@ -27,4 +27,4 @@ See [Sample code installation](https://github.com/nordvall/WifExamples/wiki/Samp
 Further instructions
 --------------------
 The wiki pages have instruction about HTTP vs HTTPS, SAML vs WS-Federation and how to develop your own solutions:
-https://github.com/nordvall/WifExamples/wiki/_pages
+https://github.com/nordvall/WifExamples/wiki/
