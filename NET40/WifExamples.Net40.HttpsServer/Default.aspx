@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WifExamples.Net40.HttpsServer.Default" ValidateRequest="false" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WifExamples.Net40.HttpsServer.Default" %>
 
 <!DOCTYPE html>
 
