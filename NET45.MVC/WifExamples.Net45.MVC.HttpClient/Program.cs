@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using WifExamples.Common;
 
 namespace WifExamples.Net45.MVC.HttpClient
@@ -12,14 +13,14 @@ namespace WifExamples.Net45.MVC.HttpClient
     {
         static void Main(string[] args)
         {
-            var factory = new ChannelFactory<IDemoService>("WS2007FederationHttpBinding_IDemoService");
-            IDemoService channel = factory.CreateChannel();
+            var tokenClient = new TokenClient("tokenService");
+            XmlElement tokenXml = tokenClient.GetToken("urn:claimsdemo:http45mvc");
 
-            string whoAmIresult = channel.WhoAmI();
-            Console.WriteLine(whoAmIresult);
+            //string whoAmIresult = channel.WhoAmI();
+            //Console.WriteLine(whoAmIresult);
 
-            string restrictedMethodResult = channel.RestrictedMethod();
-            Console.WriteLine(restrictedMethodResult);
+            //string restrictedMethodResult = channel.RestrictedMethod();
+            //Console.WriteLine(restrictedMethodResult);
 
             Console.ReadLine();
         }

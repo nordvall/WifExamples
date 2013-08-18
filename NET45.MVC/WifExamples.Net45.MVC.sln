@@ -13,9 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.DummySTS", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net45.MVC.HttpClient", "WifExamples.Net45.MVC.HttpClient\WifExamples.Net45.MVC.HttpClient.csproj", "{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net45.MVC.HttpsClient", "WifExamples.Net45.MVC.HttpsClient\WifExamples.Net45.MVC.HttpsClient.csproj", "{288C6248-118C-4F50-934F-539B6A5F347F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net45.MVC.HttpServer", "WifExamples.Net45.MVC.HttpServer\WifExamples.Net45.MVC.HttpServer.csproj", "{1F42AE68-0BAD-40B7-985D-39F38B563C63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EA2482D5-03D4-42FD-8D16-FF0F1570DD33}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +40,6 @@ Global
 		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Release|Any CPU.Build.0 = Release|Any CPU
-		{288C6248-118C-4F50-934F-539B6A5F347F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{288C6248-118C-4F50-934F-539B6A5F347F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{288C6248-118C-4F50-934F-539B6A5F347F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{288C6248-118C-4F50-934F-539B6A5F347F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1F42AE68-0BAD-40B7-985D-39F38B563C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1F42AE68-0BAD-40B7-985D-39F38B563C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F42AE68-0BAD-40B7-985D-39F38B563C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,7 +52,6 @@ Global
 		{E6859805-666E-4D16-9022-C9F66F240966} = {9338FD72-4BDD-4544-93B9-26C4368CD61B}
 		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA} = {9338FD72-4BDD-4544-93B9-26C4368CD61B}
 		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484} = {9FA1A0CF-9D4F-4B4F-8DC4-B31117A65514}
-		{288C6248-118C-4F50-934F-539B6A5F347F} = {9FA1A0CF-9D4F-4B4F-8DC4-B31117A65514}
 		{1F42AE68-0BAD-40B7-985D-39F38B563C63} = {92CA3EF1-72B9-4C47-9D17-AF345414C40B}
 	EndGlobalSection
 EndGlobal
