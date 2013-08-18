@@ -63,7 +63,9 @@
     <Content Include="Default.aspx" />
     <Content Include="DemoService.svc" />
     <Content Include="Managers.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">

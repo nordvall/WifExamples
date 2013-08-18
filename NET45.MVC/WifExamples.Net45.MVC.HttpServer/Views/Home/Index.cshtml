@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome!</h1>
+        <h3>These are your claims:</h3>
+
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Value</th>
+
+            </tr>
+
+            @foreach(var claim in Model)
+            {
+                <tr>
+                    <td>@claim.Type</td>
+                    <td>@claim.Value</td>
+                </tr>         
+            }
+        </table>
+
+        <a href="/Managers">Go to Managers' page</a>
+        <hr />
+        Server time: @DateTime.Now 
+    </div>
+</body>
+</html>
