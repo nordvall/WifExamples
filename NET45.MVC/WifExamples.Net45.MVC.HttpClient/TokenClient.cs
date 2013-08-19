@@ -24,7 +24,11 @@ namespace WifExamples.Net45.MVC.HttpClient
                 throw new ArgumentNullException("configName");
             }
 
-            _factory = new WSTrustChannelFactory(configName);
+            _factory = new WSTrustChannelFactory(configName)
+            {
+                TrustVersion = TrustVersion.WSTrust13
+            };
+            
         }
 
         public XmlElement GetToken(string realm)
@@ -37,8 +41,8 @@ namespace WifExamples.Net45.MVC.HttpClient
             var request = new RequestSecurityToken
             {
                 RequestType = RequestTypes.Issue,
-                KeyType = KeyTypes.Bearer,
-                TokenType = TokenTypes.Saml2TokenProfile11,
+                KeyType = KeyTypes.Symmetric,
+                TokenType = TokenTypes.Saml11TokenProfile11,
                 AppliesTo = new EndpointReference(realm)
             };
 
