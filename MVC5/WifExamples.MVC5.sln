@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9338FD72-4BDD-4544-93B9-26C4368CD61B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{9FA1A0CF-9D4F-4B4F-8DC4-B31117A65514}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servers", "Servers", "{92CA3EF1-72B9-4C47-9D17-AF345414C40B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Common", "..\Common\WifExamples.Common\WifExamples.Common.csproj", "{E6859805-666E-4D16-9022-C9F66F240966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.DummySTS", "..\Common\WifExamples.DummySTS\WifExamples.DummySTS.csproj", "{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EA2482D5-03D4-42FD-8D16-FF0F1570DD33}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.MVC5.HttpClient", "WifExamples.MVC5.HttpClient\WifExamples.MVC5.HttpClient.csproj", "{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.MVC5.HttpServer", "WifExamples.MVC5.HttpServer\WifExamples.MVC5.HttpServer.csproj", "{2E0B9D3A-9734-4A7B-B21D-2DB6EF97BC2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6859805-666E-4D16-9022-C9F66F240966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6859805-666E-4D16-9022-C9F66F240966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6859805-666E-4D16-9022-C9F66F240966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6859805-666E-4D16-9022-C9F66F240966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0B9D3A-9734-4A7B-B21D-2DB6EF97BC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0B9D3A-9734-4A7B-B21D-2DB6EF97BC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0B9D3A-9734-4A7B-B21D-2DB6EF97BC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0B9D3A-9734-4A7B-B21D-2DB6EF97BC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6859805-666E-4D16-9022-C9F66F240966} = {9338FD72-4BDD-4544-93B9-26C4368CD61B}
+		{E798B106-64D6-4FCF-84AD-CE4FB309A2FA} = {9338FD72-4BDD-4544-93B9-26C4368CD61B}
+		{7ED4E893-C27F-4C7D-B3D1-2B8390B19484} = {9FA1A0CF-9D4F-4B4F-8DC4-B31117A65514}
+		{2E0B9D3A-9734-4A7B-B21D-2DB6EF97BC2B} = {92CA3EF1-72B9-4C47-9D17-AF345414C40B}
+	EndGlobalSection
+EndGlobal
