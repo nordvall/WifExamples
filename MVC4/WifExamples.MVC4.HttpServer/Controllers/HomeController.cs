@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace WifExamples.MVC4.HttpServer.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         //
