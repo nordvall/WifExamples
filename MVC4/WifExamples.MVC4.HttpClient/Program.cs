@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using WifExamples.Common;
 
-namespace WifExamples.Net45.MVC.HttpClient
+namespace WifExamples.MVC4.HttpClient
 {
     class Program
     {

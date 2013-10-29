@@ -7,7 +7,7 @@ using System.Security.Claims;
 using System.Web.Http;
 using WifExamples.Common;
 
-namespace WifExamples.Net45.MVC.HttpServer.Controllers
+namespace WifExamples.MVC4.HttpServer.Controllers
 {
     public class DemoServiceController : ApiController, IDemoService
     {

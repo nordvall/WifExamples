@@ -5,7 +5,7 @@ using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WifExamples.Net45.MVC.HttpServer.Controllers
+namespace WifExamples.MVC4.HttpServer.Controllers
 {
     public class HomeController : Controller
     {

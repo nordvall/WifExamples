@@ -11,7 +11,7 @@ using System.Xml;
 using Thinktecture.IdentityModel.Constants;
 using Thinktecture.IdentityModel.WSTrust;
 
-namespace WifExamples.Net45.MVC.HttpClient
+namespace WifExamples.MVC4.HttpClient
 {
     class TokenClient
     {

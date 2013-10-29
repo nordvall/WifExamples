@@ -11,7 +11,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Thinktecture.IdentityModel.Tokens.Http;
 
-namespace WifExamples.Net45.MVC.HttpServer
+namespace WifExamples.MVC4.HttpServer
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801

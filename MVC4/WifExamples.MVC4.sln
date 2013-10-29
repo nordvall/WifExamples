@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Web
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9338FD72-4BDD-4544-93B9-26C4368CD61B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{9FA1A0CF-9D4F-4B4F-8DC4-B31117A65514}"
@@ -11,16 +13,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Common", "..\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.DummySTS", "..\Common\WifExamples.DummySTS\WifExamples.DummySTS.csproj", "{E798B106-64D6-4FCF-84AD-CE4FB309A2FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net45.MVC.HttpClient", "WifExamples.Net45.MVC.HttpClient\WifExamples.Net45.MVC.HttpClient.csproj", "{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.Net45.MVC.HttpServer", "WifExamples.Net45.MVC.HttpServer\WifExamples.Net45.MVC.HttpServer.csproj", "{1F42AE68-0BAD-40B7-985D-39F38B563C63}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EA2482D5-03D4-42FD-8D16-FF0F1570DD33}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.MVC4.HttpClient", "WifExamples.MVC4.HttpClient\WifExamples.MVC4.HttpClient.csproj", "{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WifExamples.MVC4.HttpServer", "WifExamples.MVC4.HttpServer\WifExamples.MVC4.HttpServer.csproj", "{1F42AE68-0BAD-40B7-985D-39F38B563C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

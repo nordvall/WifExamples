@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web.Http;
 using Thinktecture.IdentityModel.Tokens.Http;
 
-namespace WifExamples.Net45.MVC.HttpServer
+namespace WifExamples.MVC4.HttpServer
 {
     public static class WebApiConfig
     {

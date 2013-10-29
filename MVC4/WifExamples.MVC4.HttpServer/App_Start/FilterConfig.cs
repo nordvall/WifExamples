@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace WifExamples.Net45.MVC.HttpServer
+namespace WifExamples.MVC4.HttpServer
 {
     public class FilterConfig
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{7ED4E893-C27F-4C7D-B3D1-2B8390B19484}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WifExamples.Net45.MVC.HttpClient</RootNamespace>
-    <AssemblyName>WifExamples.Net45.MVC.HttpClient</AssemblyName>
+    <RootNamespace>WifExamples.MVC4.HttpClient</RootNamespace>
+    <AssemblyName>WifExamples.MVC4.HttpClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
