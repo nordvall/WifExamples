@@ -9,6 +9,7 @@ using WifExamples.Common;
 
 namespace WifExamples.MVC5.HttpServer.Controllers
 {
+    [Authorize]
     public class DemoServiceController : ApiController, IDemoService
     {
         [HttpGet]

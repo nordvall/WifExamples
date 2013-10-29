@@ -17,7 +17,7 @@ namespace WifExamples.MVC5.HttpClient
         static void Main(string[] args)
         {
             var tokenClient = new TokenClient("tokenService");
-            XmlElement tokenXml = tokenClient.GetToken("urn:claimsdemo:http45mvc");
+            XmlElement tokenXml = tokenClient.GetToken("urn:claimsdemo:mvc5http");
 
             string serviceEndpoint = ConfigurationManager.AppSettings["ServiceEndpoint"];
 
@@ -25,7 +25,7 @@ namespace WifExamples.MVC5.HttpClient
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("SAML", tokenXml.OuterXml);
 
 
-            HttpResponseMessage response = client.GetAsync("api/DemoService/WhoAmI").Result;
+            HttpResponseMessage response = client.GetAsync("/WhoAmI").Result;
             response.EnsureSuccessStatusCode();
 
             string content = response.Content.ReadAsStringAsync().Result;
