@@ -27,16 +27,16 @@ namespace WifExamples.MVC4.HttpServer
         }
 
         // claims transformation
-        protected void Application_PostAuthenticateRequest()
-        {
-            if (ClaimsPrincipal.Current.Identity.IsAuthenticated)
-            {
-                var principal = new ClaimsAuthenticationManager().Authenticate(string.Empty, ClaimsPrincipal.Current);
+        //protected void Application_PostAuthenticateRequest()
+        //{
+        //    if (!ClaimsPrincipal.Current.Identity.IsAuthenticated)
+        //    {
+        //        var principal = new ClaimsAuthenticationManager().Authenticate(string.Empty, ClaimsPrincipal.Current);
 
-                HttpContext.Current.User = principal;
-                Thread.CurrentPrincipal = principal;
-            }
-        }
+        //        HttpContext.Current.User = principal;
+        //        Thread.CurrentPrincipal = principal;
+        //    }
+        //}
 
         
     }
