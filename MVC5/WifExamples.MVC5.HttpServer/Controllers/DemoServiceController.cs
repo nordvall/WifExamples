@@ -12,7 +12,7 @@ namespace WifExamples.MVC5.HttpServer.Controllers
     [Authorize]
     public class DemoServiceController : ApiController, IDemoService
     {
-        [HttpGet]
+        [HttpGet, Route("WhoAmI")]
         public string WhoAmI()
         {
             ClaimsPrincipal claimsPrincipal = User as ClaimsPrincipal;
@@ -20,7 +20,8 @@ namespace WifExamples.MVC5.HttpServer.Controllers
         }
 
 
-        [HttpGet, Authorize(Roles="Manager")]
+        [Authorize(Roles = "Manager")]
+        [HttpGet, Route("RestrictedMethod")]
         public string RestrictedMethod()
         {
             return "You have the necessary role to access this method.";

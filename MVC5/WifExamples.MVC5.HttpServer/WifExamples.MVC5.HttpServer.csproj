@@ -48,6 +48,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.identitymodel.services" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.1.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -101,6 +104,15 @@
     <Reference Include="Newtonsoft.Json">
       <Private>True</Private>
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IdentityModel.Core">
+      <HintPath>..\packages\Thinktecture.IdentityModel.Core.1.0.0-beta1\lib\net45\Thinktecture.IdentityModel.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IdentityModel.WebApi">
+      <HintPath>..\packages\Thinktecture.IdentityModel.WebApi.1.0.0-beta2\lib\net45\Thinktecture.IdentityModel.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Thinktecture.IdentityModel.WebApi.AuthenticationHandler">
+      <HintPath>..\packages\Thinktecture.IdentityModel.WebApi.AuthenticationHandler.1.0.0-beta2\lib\net45\Thinktecture.IdentityModel.WebApi.AuthenticationHandler.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
