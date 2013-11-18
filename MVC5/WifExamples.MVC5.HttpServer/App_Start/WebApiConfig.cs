@@ -34,6 +34,7 @@ namespace WifExamples.MVC5.HttpServer
             var options = new AuthenticationOptions()
             {
                 RequestType = HttpRequestType.AuthorizationHeader,
+                Name = "Authorization",
                 Scheme = "SAML"
             };
 

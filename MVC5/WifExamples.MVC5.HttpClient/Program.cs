@@ -8,6 +8,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Thinktecture.IdentityModel.Tokens;
 using WifExamples.Common;
 
 namespace WifExamples.MVC5.HttpClient
@@ -18,11 +19,12 @@ namespace WifExamples.MVC5.HttpClient
         {
             var tokenClient = new TokenClient("tokenService");
             XmlElement tokenXml = tokenClient.GetToken("urn:claimsdemo:mvc5http");
+            string encodedToken = HeaderEncoding.EncodeBase64(tokenXml.OuterXml);
 
             string serviceEndpoint = ConfigurationManager.AppSettings["ServiceEndpoint"];
 
             var client = new System.Net.Http.HttpClient { BaseAddress = new Uri(serviceEndpoint) };
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("SAML", tokenXml.OuterXml);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("SAML", encodedToken);
 
 
             HttpResponseMessage response = client.GetAsync("/WhoAmI").Result;

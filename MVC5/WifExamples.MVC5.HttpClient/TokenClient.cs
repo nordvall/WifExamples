@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using Thinktecture.IdentityModel.Constants;
-using Thinktecture.IdentityModel.WSTrust;
 
 namespace WifExamples.MVC5.HttpClient
 {
